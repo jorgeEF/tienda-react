@@ -3,22 +3,6 @@ import "./AcercaDe.css";
 import logoReact from "/assets/react.svg";
 import logoVite from "/vite.svg";
 
-const integrantes = [
-  { nombre: "Melisa Romina Samanta Herrera Fernández" },
-  { nombre: "Norma Emilce	Valdez" },
-  { nombre: "Verónica Lucía	Bodeman" },
-  { nombre: "Roxana Edith	Barberis" },
-  { nombre: "Romina	Ascurra" },
-  { nombre: "Pablo Costa" },
-  { nombre: "Eduardo Joaquin Pinto Villegas" },
-  { nombre: "Ezequiel Alexis Fernandez" },
-  { nombre: "Fernando	Juárez Data" },
-  { nombre: "Jorge Esteban Femenia" },
-  { nombre: "Fabian	Zandri" },
-  { nombre: "Damian	Ottone" },
-  { nombre: "Rafael Ricardo	Strongoli" },
-];
-
 export const AcercaDe = () => {
   return (
     <div>
@@ -105,15 +89,9 @@ export const AcercaDe = () => {
             <img className="logo logo-spin" src={logoVite} alt="" />
             <img className="logo logo-spin" src={logoReact} alt="" />
           </div>
-          <h2 className="text-center">Integrantes</h2>
+          <h2 className="text-center">Creada por: </h2>
           <ul className="text-center">
-            {integrantes
-              .sort((a, b) => 0.5 - Math.random())
-              .map((e, i) => (
-                <li key={i}>
-                  {e.nombre} {e.email}
-                </li>
-              ))}
+            <p>Jorge E. Femenía</p>
           </ul>
           <div className="text-center">
             <img className="logo logo-spin" src={logoVite} alt="" />
